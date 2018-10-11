@@ -56,8 +56,6 @@
             this.txtTotDeduction = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lblPaydate = new System.Windows.Forms.Label();
-            this.txtBonus = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.txtTotEarn = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNetSal = new System.Windows.Forms.TextBox();
@@ -236,12 +234,10 @@
             this.groupBox2.Controls.Add(this.txtLeaves);
             this.groupBox2.Controls.Add(this.txtEPF);
             this.groupBox2.Controls.Add(this.txtETF);
-            this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label26);
             this.groupBox2.Controls.Add(this.label25);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtBasicSal);
-            this.groupBox2.Controls.Add(this.txtTotDeduction);
             this.groupBox2.Location = new System.Drawing.Point(120, 285);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(338, 208);
@@ -290,7 +286,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(17, 152);
+            this.label11.Location = new System.Drawing.Point(24, 152);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(117, 19);
             this.label11.TabIndex = 22;
@@ -339,21 +335,21 @@
             // 
             // txtTotDeduction
             // 
-            this.txtTotDeduction.Location = new System.Drawing.Point(153, 151);
+            this.txtTotDeduction.Location = new System.Drawing.Point(157, 152);
             this.txtTotDeduction.Name = "txtTotDeduction";
             this.txtTotDeduction.ReadOnly = true;
-            this.txtTotDeduction.Size = new System.Drawing.Size(122, 20);
+            this.txtTotDeduction.Size = new System.Drawing.Size(126, 20);
             this.txtTotDeduction.TabIndex = 18;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.lblPaydate);
-            this.groupBox3.Controls.Add(this.txtBonus);
-            this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.txtTotEarn);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.txtNetSal);
+            this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Controls.Add(this.txtTotDeduction);
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.txtOT);
             this.groupBox3.Controls.Add(this.label9);
@@ -373,27 +369,9 @@
             this.lblPaydate.TabIndex = 30;
             this.lblPaydate.Visible = false;
             // 
-            // txtBonus
-            // 
-            this.txtBonus.Location = new System.Drawing.Point(158, 106);
-            this.txtBonus.Name = "txtBonus";
-            this.txtBonus.ReadOnly = true;
-            this.txtBonus.Size = new System.Drawing.Size(124, 20);
-            this.txtBonus.TabIndex = 29;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(25, 106);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 19);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "Bonus";
-            // 
             // txtTotEarn
             // 
-            this.txtTotEarn.Location = new System.Drawing.Point(157, 150);
+            this.txtTotEarn.Location = new System.Drawing.Point(157, 113);
             this.txtTotEarn.Name = "txtTotEarn";
             this.txtTotEarn.ReadOnly = true;
             this.txtTotEarn.Size = new System.Drawing.Size(124, 20);
@@ -403,7 +381,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 149);
+            this.label3.Location = new System.Drawing.Point(22, 112);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 19);
             this.label3.TabIndex = 26;
@@ -411,10 +389,10 @@
             // 
             // txtNetSal
             // 
-            this.txtNetSal.Location = new System.Drawing.Point(159, 187);
+            this.txtNetSal.Location = new System.Drawing.Point(157, 187);
             this.txtNetSal.Name = "txtNetSal";
             this.txtNetSal.ReadOnly = true;
-            this.txtNetSal.Size = new System.Drawing.Size(124, 20);
+            this.txtNetSal.Size = new System.Drawing.Size(126, 20);
             this.txtNetSal.TabIndex = 25;
             // 
             // label10
@@ -432,7 +410,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(24, 186);
+            this.label12.Location = new System.Drawing.Point(24, 188);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(80, 19);
             this.label12.TabIndex = 24;
@@ -440,7 +418,7 @@
             // 
             // txtOT
             // 
-            this.txtOT.Location = new System.Drawing.Point(157, 61);
+            this.txtOT.Location = new System.Drawing.Point(157, 65);
             this.txtOT.Name = "txtOT";
             this.txtOT.ReadOnly = true;
             this.txtOT.Size = new System.Drawing.Size(124, 20);
@@ -450,7 +428,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(24, 61);
+            this.label9.Location = new System.Drawing.Point(24, 64);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(79, 19);
             this.label9.TabIndex = 17;
@@ -565,8 +543,6 @@
         private System.Windows.Forms.TextBox txtBasicSal;
         private System.Windows.Forms.TextBox txtTotDeduction;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox txtBonus;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtTotEarn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNetSal;

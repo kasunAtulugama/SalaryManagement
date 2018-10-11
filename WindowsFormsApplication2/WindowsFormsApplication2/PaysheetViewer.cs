@@ -31,7 +31,7 @@ namespace WindowsFormsApplication2
         {
             InitializeComponent();
         }
-        public PaysheetViewer(String name, String empID, String designation, String basicSalary, String leaves, String ot, String epf, String bonus, String totEarn, String totDeduction, String netPay, String paydate)
+        public PaysheetViewer(String name, String empID, String designation, String basicSalary, String leaves, String ot, String epf, String totEarn, String totDeduction, String netPay, String paydate)
         {
             InitializeComponent();
             this.name = name;
@@ -41,7 +41,7 @@ namespace WindowsFormsApplication2
             this.leaves = leaves;
             this.ot = ot;
             this.epf = epf;
-            this.bonus = bonus;
+            //this.bonus = bonus;
             this.totEarn = totEarn;
             this.totDeduction = totDeduction;
             this.netPay = netPay;
@@ -61,7 +61,7 @@ namespace WindowsFormsApplication2
             parameters.Add(new ReportParameter("leaves", leaves));
             parameters.Add(new ReportParameter("ot", ot));
             parameters.Add(new ReportParameter("epf", epf));
-            parameters.Add(new ReportParameter("bonus", bonus));
+            //parameters.Add(new ReportParameter("bonus", bonus));
             parameters.Add(new ReportParameter("totEarns", totEarn));
             parameters.Add(new ReportParameter("totDeduction", totDeduction));
             parameters.Add(new ReportParameter("netPay", netPay));

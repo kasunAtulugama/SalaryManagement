@@ -198,6 +198,7 @@ namespace WindowsFormsApplication2
                         {
                             basicSal = float.Parse(r1[1].ToString());
                             txtBasicSal.Text = "Rs." + r1[1].ToString() + ".00";
+                            totEarn = basicSal;
 
                         }
 
@@ -314,7 +315,7 @@ namespace WindowsFormsApplication2
         {
             if (ValidationEmployeeSalary())
             {
-            PaysheetViewer p = new PaysheetViewer(txtEmpName.Text,txtEmpID.Text,txtDesignation.Text,txtBasicSal.Text,txtLeaves.Text,txtOT.Text,txtEPF.Text,txtBonus.Text,txtTotEarn.Text,txtTotDeduction.Text,txtNetSal.Text,lblPaydate.Text);       
+            PaysheetViewer p = new PaysheetViewer(txtEmpName.Text,txtEmpID.Text,txtDesignation.Text,txtBasicSal.Text,txtLeaves.Text,txtOT.Text,txtEPF.Text,txtTotEarn.Text,txtTotDeduction.Text,txtNetSal.Text,lblPaydate.Text);       
 
             p.Show();
         }
@@ -367,7 +368,7 @@ namespace WindowsFormsApplication2
                 {
                     DBConnect db = new DBConnect();
 
-                    String q = "insert into emp_salary(id,basicSalary,etf,epf,leaves,ot,bonus,totDeduction,totEarn,netpay,paydate) values ('" + txtEmpID.Text + "','" + txtBasicSal.Text + "','" + txtETF.Text + "','" + txtEPF.Text + "','" + txtLeaves.Text + "','" + txtOT.Text + "','" + txtBonus.Text + "','" + txtTotDeduction.Text + "','" + txtTotEarn.Text + "','" + txtNetSal.Text + "','" + lblPaydate.Text + "')";
+                    String q = "insert into emp_salary(id,basicSalary,etf,epf,leaves,ot,bonus,totDeduction,totEarn,netpay,paydate) values ('" + txtEmpID.Text + "','" + txtBasicSal.Text + "','" + txtETF.Text + "','" + txtEPF.Text + "','" + txtLeaves.Text + "','" + txtOT.Text + "','" + txtTotDeduction.Text + "','" + txtTotEarn.Text + "','" + txtNetSal.Text + "','" + lblPaydate.Text + "')";
                     MySqlCommand cmd = new MySqlCommand(q, db.con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Deducted", "Done !!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
